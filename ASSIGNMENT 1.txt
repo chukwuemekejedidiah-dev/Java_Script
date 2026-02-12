@@ -1,0 +1,232 @@
+ASSIGNMENT 1
+QUESTION 1
+
+//Algorithm
+Start
+Read the principal amount
+Read the rate of interest
+Read the time
+Calculate the simple interest using the formula (SI=(Principal x Rate x Time)/100)
+Display the simple interest
+Stop
+
+
+
+//Pseudocode
+START
+INPUT principal
+INPUT rate
+INPUT time
+SET simpleInterest = (principal * rate * time) / 100
+OUTPUT simpleInterest
+STOP
+
+//Flowchart
+ ┌─────────┐
+ │  Start  │
+ └────┬────┘
+      ↓
+ ┌──────────────┐
+ │ Input P, R, T│
+ └────┬─────────┘
+      ↓
+ ┌────────────────────────┐
+ │ SI = (P x R x T) / 100 │
+ └────┬───────────────────┘
+      ↓
+ ┌──────────────┐
+ │ Display SI   │
+ └────┬─────────┘
+      ↓
+ ┌─────────┐
+ │  Stop   │
+ └─────────┘
+
+
+Question 2
+
+//Algorithm
+Start
+Read temperature in Celsius
+Convert to Fahrenheit using the formula (F=(C x 9/5)+32)
+Display the Fahrenheit value
+Stop
+
+
+//Pseudocode
+START
+INPUT celsius
+SET fahrenheit = (celsius x 9 / 5) + 32
+OUTPUT fahrenheit
+STOP
+
+
+// Flowchart
+ ┌─────────┐
+ │  Start  │
+ └────┬────┘
+      ↓
+ ┌──────────────┐
+ │ Input Celsius│
+ └────┬─────────┘
+      ↓
+ ┌────────────────────────┐
+ │ F = (C x 9 / 5) + 32   │
+ └────┬───────────────────┘
+      ↓
+ ┌─────────────────┐
+ │ Display F       │
+ └────┬────────────┘
+      ↓
+ ┌─────────┐
+ │  Stop   │
+ └─────────┘
+
+
+
+Question 3
+
+//Algorithm 
+
+Start
+Read the length
+Read the width
+Calculate area = length x width
+Calculate perimeter = 2 x (length + width)
+Display the area and perimeter
+Stop
+
+
+//Pseudocode
+START
+INPUT length
+INPUT width
+SET area = length * width
+SET perimeter = 2 * (length + width)
+OUTPUT area
+OUTPUT perimeter
+STOP
+
+//Flowchart
+
+ ┌─────────┐
+ │  Start  │
+ └────┬────┘
+      ↓
+ ┌────────────────────┐
+ │ Input Length, Width│
+ └────┬───────────────┘
+      ↓
+ ┌────────────────────┐
+ │ Area = L x W       │
+ └────┬───────────────┘
+      ↓
+ ┌────────────────────────┐
+ │ Perimeter = 2(L + W)  │
+ └────┬───────────────────┘
+      ↓
+ ┌────────────────────┐
+ │ Display Area & Per │
+ └────┬───────────────┘
+      ↓
+ ┌─────────┐
+ │  Stop   │
+ └─────────┘
+
+PART B
+
+Question 4
+
+//Algorithm 
+Start
+Read a number
+If the number is divisible by 2
+Display “Even”
+Otherwise
+Display “Odd”
+Stop
+
+
+//Pseudocode
+START
+INPUT number
+IF number MOD 2 = 0 THEN
+    OUTPUT "Even"
+ELSE
+    OUTPUT "Odd"
+END IF
+STOP
+
+//Flowchart
+
+ ┌─────────┐
+ │  Start  │
+ └────┬────┘
+      ↓
+ ┌──────────────┐
+ │ Input Number │
+ └────┬─────────┘
+      ↓
+ ┌───────────────────┐
+ │ Number MOD 2 = 0? │
+ └────┬───────┬─────┘
+     Yes      No
+      ↓        ↓
+ ┌─────────┐ ┌────────┐
+ │ Display │ │ Display│
+ │ "Even"  │ │ "Odd"  │
+ └────┬────┘ └────┬───┘
+      ↓           ↓
+      └──────┬────┘
+             ↓
+        ┌─────────┐
+        │  Stop   │
+        └─────────┘
+
+Question 5
+
+//Algorithm 
+Start
+Read the student mark
+If the mark is 50 or above
+Display “Pass”
+Otherwise
+Display “Fail”
+Stop
+
+
+
+//Pseudocode
+START
+INPUT mark
+IF mark >= 50 THEN
+    OUTPUT "Pass"
+ELSE
+    OUTPUT "Fail"
+END IF
+STOP
+
+//Flowchart
+ ┌─────────┐
+ │  Start  │
+ └────┬────┘
+      ↓
+ ┌──────────────┐
+ │ Input Mark   │
+ └────┬─────────┘
+      ↓
+ ┌───────────────────┐
+ │ Mark >= 50 ?      │
+ └────┬───────┬─────┘
+     Yes      No
+      ↓        ↓
+ ┌─────────┐ ┌─────────┐
+ │ Display │ │ Display │
+ │ "Pass"  │ │ "Fail"  │
+ └────┬────┘ └────┬────┘
+      ↓           ↓
+      └──────┬────┘
+             ↓
+        ┌─────────┐
+        │  Stop   │
+        └─────────┘
