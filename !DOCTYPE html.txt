@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aptech Header</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* HEADER */
+    header {
+      width: 100%;
+      height: 90px;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 30px;
+      border-bottom: 1px solid #eee;
+    }
+
+    /* LOGO */
+    .logo {
+      width: 140px;
+      height: auto;
+    }
+
+    /* HAMBURGER — SIZE MATCHED TO IMAGE */
+    .hamburger-section {
+      height: 48px;   /* same visual size as image */
+      width: auto;    /* keeps proportions */
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img 
+      class="logo" 
+      src="Images/Aptech_Logo-removebg-preview.png" 
+      alt="Aptech Logo"
+    >
+
+    <img 
+      class="hamburger-section" 
+      src="Images/Screenshot_9-2-2026_103131_aptech-nigeria.com-removebg-preview.png" 
+      alt="Menu"
+    >
+  </header>
+
+</body>
+</html>

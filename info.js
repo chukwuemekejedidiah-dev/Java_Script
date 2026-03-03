@@ -240,13 +240,13 @@
 // console.log("nullVariable: " + typeof nullVariable);
 
 
-string = "10";
-num = 5;
-console.log("Before addition: string = " + string + ", num = " + num);
-let result = string + num;
-console.log("After addition: result = " + result);
-// The result will be "105" because the number 5 is coerced into a string and concatenated with "10".
-Number("10") + num;
-console.log("After addition with type conversion: result = " + (Number(string) + num));
+// string = "10";
+// num = 5;
+// console.log("Before addition: string = " + string + ", num = " + num);
+// let result = string + num;
+// console.log("After addition: result = " + result);
+// // The result will be "105" because the number 5 is coerced into a string and concatenated with "10".
+// Number("10") + num;
+// console.log("After addition with type conversion: result = " + (Number(string) + num));
 
 
