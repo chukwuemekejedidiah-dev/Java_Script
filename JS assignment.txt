@@ -1,0 +1,135 @@
+PART A
+
+1. Define a Function in JavaScript
+
+A function in JavaScript is a  block of code that performs a specific task.
+
+
+2. What is a Function?
+
+A function is a reusable block of code designed to carry out a particular operation.
+
+
+3. Why are Functions Important in Programming?
+
+Functions are important because they help reduce repetition, make code organized and break large programs into smaller parts.
+
+
+
+2. Explain the Following Terms
+a. Function Declaration
+
+A function declaration is when a function is created using the function keyword with a name.
+
+
+b. Function Expression
+
+A function expression is when a function is stored inside a variable.
+
+
+c. Arrow Function
+
+An arrow function is a shorter way to write functions using " => ".
+
+
+d. Anonymous Function
+
+An anonymous function is a function without a name.
+
+
+e. Parameters
+
+Parameters are variables listed inside the function definition.
+
+
+f. Arguments
+
+Arguments are the values passed into a function when it is called.
+
+
+g. Return Statement
+
+The return statement sends a value back from a function.
+
+
+h. Callback Function
+
+A callback function is a function passed into another function as an argument.
+
+
+i. Hoisting
+
+Hoisting is JavaScript's behavior of moving function declarations to the top of the code before execution.
+
+
+3. Differences
+1. Function Declaration vs Function Expression
+
+Function Declaration	          Function Expression
+Defined with function name()	  Stored inside a variable
+Hoisted	                          Not hoisted
+Can be called before definition	  Cannot be called before definition
+
+
+2. Regular Function vs Arrow Function
+
+Regular Function	  Arrow Function
+Uses function keyword	  Uses =>
+Has its own this	  Does not have its own this
+Longer syntax	          Shorter syntax
+
+3. Parameters vs Arguments
+Parameters	                        Arguments
+Variables in function definition	Values passed when calling function
+
+
+4. Difference between console.log() and return
+
+console.log()	                  return
+Displays output in the console	 Sends a value back from a function
+Used for debugging	         Used to store or reuse results
+
+
+
+
+PART B
+
+1. Function to Add Two Numbers (Function Declaration)
+
+function addNumbers(a, b) {
+  return a + b;
+}
+
+console.log(addNumbers(2, 3));
+console.log(addNumbers(5, 7));
+console.log(addNumbers(10, 20));
+
+
+2. Function to Multiply Two Numbers (Arrow Function)
+
+const multiply = (a, b) => {
+  return a * b;
+};
+
+console.log(multiply(2, 4));
+console.log(multiply(5, 3));
+console.log(multiply(6, 7));
+
+
+3. Function to Subtract Two Numbers (Function Expression)
+
+const subtract = function(a, b) {
+  console.log(a - b);
+};
+
+subtract(10, 3);
+subtract(20, 5);
+subtract(15, 7);
+
+4. Anonymous Function using setTimeout
+
+
+setTimeout(function() {
+  console.log("JavaScript is powerful!");
+}, 2000);
+
