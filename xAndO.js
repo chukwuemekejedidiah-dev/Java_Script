@@ -1,59 +1,56 @@
 const prompt = require("prompt-sync")();
 
-// empty board
-let b1=" ", b2=" ", b3=" ";
-let b4=" ", b5=" ", b6=" ";
-let b7=" ", b8=" ", b9=" ";
+let board = [" ", " ", " ", " ", " ", " ", " ", " ", " "];
+let player = prompt("Do you want to start with X or O? ");
+while (player !== "X" && player !== "O" && player !== "x" && player !== "o") {
+  player = prompt("Invalid choice. Please enter X or O: ");
+}
 
-let player = "X";
+if (player === "x") player = "X";
+if (player === "o") player = "O";
+
+let currentPlayer = player;
 
 while (true) {
+  // show board
+  console.log(" " + board[0] + " | " + board[1] + " | " + board[2]);
+  console.log("-----------");
+  console.log(" " + board[3] + " | " + board[4] + " | " + board[5]);
+  console.log("-----------");
+  console.log(" " + board[6] + " | " + board[7] + " | " + board[8]);
 
-    // show board
-    console.log(`
- ${b1} | ${b2} | ${b3}
------------
- ${b4} | ${b5} | ${b6}
------------
- ${b7} | ${b8} | ${b9}
-`);
+  let move = prompt(`Player ${currentPlayer}, choose (1-9): `) - 1;
+  if (board[move] !== " ") {
+    console.log("Invalid move!");
+    continue;
+  }
+  board[move] = currentPlayer;
 
-    let move = prompt("Player " + player + ", choose (1-9): ");
+  // check win
+  let win = false;
+  if (board[0] === currentPlayer && board[1] === currentPlayer && board[2] === currentPlayer) win = true;
+  if (board[3] === currentPlayer && board[4] === currentPlayer && board[5] === currentPlayer) win = true;
+  if (board[6] === currentPlayer && board[7] === currentPlayer && board[8] === currentPlayer) win = true;
+  if (board[0] === currentPlayer && board[3] === currentPlayer && board[6] === currentPlayer) win = true;
+  if (board[1] === currentPlayer && board[4] === currentPlayer && board[7] === currentPlayer) win = true;
+  if (board[2] === currentPlayer && board[5] === currentPlayer && board[8] === currentPlayer) win = true;
+  if (board[0] === currentPlayer && board[4] === currentPlayer && board[8] === currentPlayer) win = true;
+  if (board[2] === currentPlayer && board[4] === currentPlayer && board[6] === currentPlayer) win = true;
 
-    // place move
-    if (move == 1 && b1 == " ") b1 = player;
-    else if (move == 2 && b2 == " ") b2 = player;
-    else if (move == 3 && b3 == " ") b3 = player;
-    else if (move == 4 && b4 == " ") b4 = player;
-    else if (move == 5 && b5 == " ") b5 = player;
-    else if (move == 6 && b6 == " ") b6 = player;
-    else if (move == 7 && b7 == " ") b7 = player;
-    else if (move == 8 && b8 == " ") b8 = player;
-    else if (move == 9 && b9 == " ") b9 = player;
-    else {
-        console.log("Invalid move!");
-        continue;
-    }
+  if (win) {
+    console.log(" " + board[0] + " | " + board[1] + " | " + board[2]);
+    console.log("-----------");
+    console.log(" " + board[3] + " | " + board[4] + " | " + board[5]);
+    console.log("-----------");
+    console.log(" " + board[6] + " | " + board[7] + " | " + board[8]);
+    console.log("Player " + currentPlayer + " wins!");
+    break;
+  }
 
-    // check win
-    if (
-        (b1==player && b2==player && b3==player) ||
-        (b4==player && b5==player && b6==player) ||
-        (b7==player && b8==player && b9==player) ||
-        (b1==player && b4==player && b7==player) ||
-        (b2==player && b5==player && b8==player) ||
-        (b3==player && b6==player && b9==player) ||
-        (b1==player && b5==player && b9==player) ||
-        (b3==player && b5==player && b7==player)
-    ) {
-        console.log("Player " + player + " wins!");
-        break;
-    }
-
-    // switch player
-    if (player == "X") {
-        player = "O";
-    } else {
-        player = "X";
-    }
+  // switch player
+  if (currentPlayer === "X") {
+    currentPlayer = "O";
+  } else {
+    currentPlayer = "X";
+  }
 }
