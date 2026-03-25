@@ -1,0 +1,56 @@
+JAVASCRIPT EVENTS – THEORY
+
+
+
+ 1. What is an Event in JavaScript?
+
+An event is an action or occurrence that happens in the browser, usually as a result of user interaction or browser activity.
+
+Examples include clicking a button, typing in an input field, or submitting a form.
+
+Five real-life examples of browser events are click, which happens when a user clicks on an element; input, which occurs when a user types in a field; submit, which happens when a form is submitted; mouseover, which occurs when the mouse moves over an element; and keydown, which happens when a keyboard key is pressed.
+
+
+2. Event Listeners
+
+An event listener is a method used to detect when an event occurs and then execute a function in response.
+
+The onclick method can only handle one event at a time and is less flexible. In contrast, addEventListener() can handle multiple events on the same element and is more flexible and widely used.
+
+addEventListener is preferred because it allows multiple event handlers, provides cleaner code, and separates JavaScript from HTML.
+
+
+3. Types of Events
+
+A click event is triggered when a user clicks on an element.
+
+An input event is triggered when a user types or changes the value in an input field.
+
+A submit event is triggered when a form is submitted.
+
+---
+
+4. The Event Object
+
+The event object is automatically created when an event occurs and contains information about the event.
+
+Some important properties include target, which refers to the element that triggered the event; type, which indicates the type of event such as click or input; value, which represents the value of an input field; key, which shows the key pressed on the keyboard; and clientX, which gives the horizontal position of the mouse.
+
+The event object is important because it helps you understand what triggered the event and allows you to control and manipulate event behavior.
+
+
+5. preventDefault()
+
+preventDefault() is a method used to stop the default action of an event.
+
+For example, it can be used to prevent a form from reloading the page when it is submitted or to stop a link from opening a new page.
+
+
+
+ 6. Form Validation
+
+Form validation is the process of checking if user input is correct before submitting a form.
+
+HTML validation is built-in and simple but has limited customization. JavaScript validation is more flexible and powerful and allows custom rules as well as real-time feedback.
+
+
