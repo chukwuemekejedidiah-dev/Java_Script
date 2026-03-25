@@ -1,0 +1,75 @@
+Libraries, Frameworks, React, SQL, Classes, and OOP Explained
+
+Libraries
+A library is a collection of pre-written code that you can use to perform specific tasks instead of writing everything from scratch. It helps save time and effort by providing ready-made functions.
+
+In a library, you are in control of the program and you decide when to use the library functions.
+
+Examples include Lodash in JavaScript and NumPy in Python.
+
+Frameworks
+A framework is a structure that provides a foundation for building applications. It defines how your project should be organized and how different parts should interact.
+
+In a framework, the framework controls the flow of the program and calls your code when needed.
+
+Examples include Angular, Vue, and Django.
+
+Difference Between Library and Framework
+A library is something you call when you need it, while a framework calls your code and controls the overall structure.
+
+React
+React is a JavaScript library used for building user interfaces, especially for web applications. It allows developers to create reusable components and build fast, interactive interfaces.
+
+React uses a component-based structure and a virtual DOM to improve performance.
+
+Example:
+function App() {
+return <h1>Hello World</h1>;
+}
+
+SQL
+SQL stands for Structured Query Language. It is used to manage and interact with databases.
+
+With SQL, you can store, retrieve, update, and delete data in a database.
+
+Example:
+SELECT * FROM users;
+
+Classes
+A class is a blueprint for creating objects. It defines the properties and behaviors that the objects created from it will have.
+
+Example:
+class Person {
+constructor(name) {
+this.name = name;
+}
+}
+
+OOP (Object-Oriented Programming)
+Object-Oriented Programming is a programming style that uses classes and objects to organize code.
+
+The main concepts of OOP include encapsulation, inheritance, polymorphism, and abstraction.
+
+Encapsulation means hiding data inside objects and restricting direct access to it.
+
+Inheritance allows one class to inherit properties and methods from another class.
+
+Polymorphism allows methods to behave differently depending on the object.
+
+Abstraction means showing only important details and hiding complexity.
+
+Example:
+class Animal {
+speak() {
+console.log("Animal makes sound");
+}
+}
+
+class Dog extends Animal {
+speak() {
+console.log("Dog barks");
+}
+}
+
+How Everything Connects
+OOP is a way of writing and structuring code. Classes are used within OOP to create objects. SQL is used to manage data in databases. Libraries provide reusable tools, while frameworks provide structure. React is a library used to build user interfaces.
